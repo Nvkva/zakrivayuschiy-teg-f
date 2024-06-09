@@ -88,6 +88,29 @@
   inset-inline-start: -15px;
   content: '▶';
   pointer-events: none;
+  animation: 0.5s ease-in-out infinite reverse pointer-move;
+}
+
+@keyframes pointer-move {
+  0% {
+    transform: translate(0px);
+  }
+
+  25% {
+    transform: translate(1px);
+  }
+
+  50% {
+    transform: translate(2px);
+  }
+
+  75% {
+    transform: translate(3px);
+  }
+
+  100% {
+    transform: translate(4px);
+  }
 }
 
 @keyframes disabling {
@@ -168,7 +191,6 @@
 .cards {
   background-color: var(--main-background-color);
   border: solid #000000 2px;
-  block-size: 100vh;
   width: var(--width-mobile);
 }
 
@@ -191,6 +213,21 @@
   padding-bottom: 0;
 }
 
+.buttons {
+  display: grid;
+  justify-content: end;
+  grid-auto-flow: column;
+  align-items: center;
+  margin: 25px 25px 25px 0px;
+
+}
+
+.like-icon {
+  background: none;
+  border: none;
+
+}
+
 .button__text {
   display: grid;
   justify-content: center;
@@ -199,10 +236,10 @@
   font-size: 14px;
   line-height: 12.6px;
   color: var(--main-color);
-  background: none;
   border: none;
   appearance: none;
   cursor: pointer;
+
 }
 
 .card__like-button {
@@ -210,6 +247,9 @@
   border: 2px solid var(--main-color);
   width: 130px;
   height: 38px;
+  background: none;
+  appearance: none;
+  cursor: pointer;
 }
 
 .floppy-icon {
@@ -248,4 +288,23 @@
     -webkit-text-stroke: 1px var(--main-background-color);
     text-shadow: none;
   }
+}
+
+.footer {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr;
+  padding: 52px 34.5px 100px;
+}
+
+.footer-button {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  border: solid #000000 2px;
+  background: var(--main-background-color);
+  padding: 15px 0px;
+  width: 100%;
+  gap: 8px;
 }
