@@ -18,7 +18,9 @@
       linear-gradient(#e7e7e7, #1a1a1a);
     --height-mobile: 327px;
     --heigt-desktop: 368px;
-    --width-mobile: 100%
+    --width-mobile: 100%;
+    --heart-filling: #FF0000;
+    --color-button: #FFFFFF;
 
 
 
