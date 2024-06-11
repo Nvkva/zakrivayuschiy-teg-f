@@ -213,38 +213,45 @@
 }
 
 .buttons {
-  display: grid;
+  display: flex;
   justify-content: end;
-  grid-auto-flow: column;
   align-items: center;
+  flex-direction: row;
+  gap: 5px;
   margin: 25px 25px 25px 0px;
+  height: 38px;
+}
+
+.is-liked {
+  background: none;
+  height: 100%;
+  padding: 0;
+  border: solid 2px transparent;
+  transition: 0.3s ease;
+}
+
+.is-liked:focus {
+  outline: none;
+}
+
+.is-liked:focus-visible {
+  outline: none;
+  border: solid 2px var(--main-color);
+}
+
+.sparks {
+  opacity: 0.0;
 }
 
 .like-icon {
+  height: 34px;
+  width: 37px;
   background: none;
   border: none;
 }
 
 .like-icon:focus {
   outline: none;
-}
-
-.like-icon:focus-visible {
-  outline: none;
-  border: solid 2px var(--main-color);
-  animation: 0.3s ease frame;
-}
-
-@keyframes frame {
-  0% {
-    border: solid 0px var(--main-color);
-  }
-  50% {
-    border: solid 1px var(--main-color);
-  }
-  100% {
-    border: solid 2px var(--main-color);
-  }
 }
 
 .button {
@@ -262,7 +269,8 @@
   transform: scaleX(0);
 }
 
-.button:is(:hover)::before  {
+
+.button:is(:hover)::before {
   content: "";
   background: var(--main-color);
   width: 100%;
@@ -279,6 +287,7 @@
   0% {
     width: 0%;
   }
+
   100% {
     width: 100%;
   }
@@ -302,7 +311,7 @@
 
 .card__like-button {
   width: 130px;
-  height: 38px;
+  height: 100%;
 }
 
 .button:focus {
@@ -384,4 +393,3 @@
   width: 100%;
   gap: 8px;
 }
-
