@@ -19,11 +19,13 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  max-inline-size: 700px;
   background-image: var(--main-background);
   background-size: cover;
   color: var(--main-color);
   background-attachment: fixed;
   background-repeat: no-repeat;
+  margin: 0 auto;
 }
 
 .decor {
@@ -239,10 +241,6 @@
   border: solid 2px var(--main-color);
 }
 
-.sparks {
-  opacity: 0.0;
-}
-
 .like-icon {
   height: 34px;
   width: 37px;
@@ -254,6 +252,14 @@
   outline: none;
 }
 
+.main-body:hover {
+  fill: var(--body-filling);
+}
+
+.sparks {
+  opacity: 0.0;
+}
+
 .button {
   position: relative;
   outline: none;
@@ -263,34 +269,27 @@
   cursor: pointer;
 }
 
-.button:not(:hover)::before {
+.button::before {
   content: "";
   background: none;
   transform: scaleX(0);
-}
-
-
-.button:is(:hover)::before {
-  content: "";
-  background: var(--main-color);
+  transform-origin: left center;
   width: 100%;
   height: 100%;
-  transform: scaleX(1);
+  transition: ease 0.3s;
   display: block;
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
-  animation: 0.5s ease-in-out button-hovering;
 }
 
-@keyframes button-hovering {
-  0% {
-    width: 0%;
-  }
-
-  100% {
-    width: 100%;
-  }
+.button:hover::before {
+  content: "";
+  background: var(--main-color);
+  bottom: 0;
+  left: 0;
+  transform-origin: left center;
+  transform: scaleX(1);
 }
 
 .button__text {
@@ -392,4 +391,33 @@
   padding: 15px 0px;
   width: 100%;
   gap: 8px;
+}
+
+dialog:is([open]) {}
+
+dialog:not([open]) {
+  pointer-events: none;
+  opacity: 0;
+}
+
+dialog::backdrop {
+  background-color: Org(0 0 0 / 0.75);
+  transition: all 0.3s;
+}
+
+
+.dialog__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px
+}
+
+.dialog__title {
+  font-family: var(--accent-font);
+  font-weight: var(--main-text-font-weight);
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--main-color);
+  text-transform: uppercase;
 }
