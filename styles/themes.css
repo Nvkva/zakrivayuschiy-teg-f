@@ -4,7 +4,7 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
-.theme-dark {
+.theme-dark .page {
   --main-color: #00CC14;
   --main-background-color: #000000;
   --main-background: repeating-linear-gradient(#000 0 2px,
