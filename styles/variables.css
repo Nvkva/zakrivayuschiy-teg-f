@@ -1,6 +1,10 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
   --main-text-font-weight: 400;
+  --main-title-font-size: 49px;
+  --main-title-line-height: 49px;
+  --header-text-font-size: 14px;
+  --header-text-line-height: 14px;
   --header--font-weight: 700;
   --main-font: 'Inter Variable';
   --accent-font: 'Press Start 2P';
@@ -18,12 +22,28 @@
   --heart-filling: #FF0000;
   --body-filling: #000000;
   --color-button: #FFFFFF;
+  --gap-footer-button: 8px;
+  --list-padding: 21px;
+  --disabled-inset-inline: -19px;
+  --header-text-margin: 20px;
+  --footer-icon-width: 28px;
+  --footer-icon-height: 28px;
 }
 
-@media (width >=375px) {
+@media (width >375px) {
   :root {
-    --main-height: clamp(327px, 87vh, 368px);
     --main-width: 100%;
     --width-section-heading: 100%;
+    --main-text-font-weight: 400;
+    --main-title-font-size: 49px;
+    --main-title-line-height: 49px;
+    --header-text-font-size: 23px;
+    --header-text-line-height: 23px;
+    --gap-footer-button: 8px;
+    --list-padding: 18px;
+    --disabled-inset-inline: -20px;
+    --header-text-margin: 28px;
+    --footer-icon-width: 21px;
+    --footer-icon-height: 21px;
   }
 }
