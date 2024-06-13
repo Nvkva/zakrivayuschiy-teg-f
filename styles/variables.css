@@ -1,29 +1,29 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-    --main-text-font-weight: 400;
-    --header--font-weight: 700;
-    --main-font: 'Inter Variable';
-    --accent-font: 'Press Start 2P';
-    --main-color: #000000;
-    --main-background-color:#FFFFFF;
-    --main-background: repeating-linear-gradient(
-        #d3d3d3 0 2px,
-        transparent 2px 4px
-      ),
-      repeating-linear-gradient(
-        90deg,
-        #d3d3d3 0 2px,
-        transparent 2px 4px
-      ),
-      linear-gradient(#e7e7e7, #1a1a1a);
-    --height-mobile: 327px;
-    --heigt-desktop: 368px;
-    --width-mobile: 100%;
-    --heart-filling: #FF0000;
-    --body-filling: #000000;
-    --color-button: #FFFFFF;
+  --main-text-font-weight: 400;
+  --header--font-weight: 700;
+  --main-font: 'Inter Variable';
+  --accent-font: 'Press Start 2P';
+  --main-color: #000000;
+  --main-background-color: #FFFFFF;
+  --main-background: repeating-linear-gradient(#d3d3d3 0 2px,
+      transparent 2px 4px),
+    repeating-linear-gradient(90deg,
+      #d3d3d3 0 2px,
+      transparent 2px 4px),
+    linear-gradient(#e7e7e7, #1a1a1a);
+  --main-height: 327px;
+  --main-width: 100%;
+  --width-section-heading: 315px;
+  --heart-filling: #FF0000;
+  --body-filling: #000000;
+  --color-button: #FFFFFF;
+}
 
-
-
-
+@media (width >=375px) {
+  :root {
+    --main-height: clamp(327px, 87vh, 368px);
+    --main-width: 100%;
+    --width-section-heading: 100%;
+  }
 }
