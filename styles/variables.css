@@ -5,9 +5,9 @@
   --main-title-line-height: 49px;
   --header-text-font-size: 14px;
   --header-text-line-height: 14px;
-  --header--font-weight: 700;
-  --main-font: 'Inter Variable';
-  --accent-font: 'Press Start 2P';
+  --header-font-weight: 700;
+  --main-font: 'Inter Variable', sans-serif;
+  --accent-font: 'Press Start 2P', fantasy;
   --main-color: #000000;
   --main-background-color: #FFFFFF;
   --main-background: repeating-linear-gradient(#d3d3d3 0 2px,
@@ -28,13 +28,13 @@
   --header-text-margin: 20px;
   --footer-icon-width: 28px;
   --footer-icon-height: 28px;
+  --decor-padding-top: 120px;
 }
 
 @media (width >375px) {
   :root {
     --main-width: 100%;
     --width-section-heading: 100%;
-    --main-text-font-weight: 400;
     --main-title-font-size: 49px;
     --main-title-line-height: 49px;
     --header-text-font-size: 23px;
@@ -45,5 +45,6 @@
     --header-text-margin: 28px;
     --footer-icon-width: 21px;
     --footer-icon-height: 21px;
+    --decor-padding-top: 136px;
   }
 }

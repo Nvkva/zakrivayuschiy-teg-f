@@ -48,7 +48,7 @@
   >
   <link
     rel="apple-touch-icon"
-    href="./images/favicon.svg"
+    href="./images/favicon.png"
   >
   <script src="./scripts/set-theme.js"></script>
 </head>
@@ -56,8 +56,8 @@
 <body class="page">
   <header class="header">
     <div class="decor">
-      <h1 class="header__main-title">&lt;/html&gt;</h1>
-      <p class="header__text">закрывающий тег</p>
+      <a class="header__main-title">&lt;/html&gt;</a>
+      <h1 class="header__text">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -98,21 +98,27 @@
       <li class="card">
         <h2 class="section-heading">Фритрек и нулевой спринт: Подготовка к работе</h2>
         <div class="image-container">
-          <p class="label">воодушевление</p>
+          <span class="label">воодушевление</span>
           <img
-            class="image brightness"
+            class="image brightness cat-with-glasses"
             src="./images/cat-with-glasses.png"
             alt="Картинка кота в очках"
           >
         </div>
         <p class="content-text">Это было самое начало пути. На этом этапе важно было проникнуться основами и
           настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.</p>
-          <p class="content-text">В этот момент я была полна энтузиазма, а мотивации был вагон и маленькая тележка. Думала, какой же крутой я буду в конце обучения, прямо как этот кот в очках. Спойлер - я больше так не думаю.</p>
+        <p class="content-text">В этот момент я была полна энтузиазма, а мотивации был вагон и маленькая тележка.
+          Думала, какой же крутой я буду в конце обучения, прямо как этот кот в очках. Спойлер - я больше так не думаю.
+        </p>
         <div class="buttons">
-          <button class="card__icon-button is-liked">
+          <button
+            class="card__icon-button"
+            type="button"
+          >
             <svg
               class="like-icon"
               viewBox="0 0 39 36"
+              aria-hidden="true"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -140,7 +146,10 @@
               />
             </svg>
           </button>
-          <button class="card__like-button button">
+          <button
+            class="card__like-button button"
+            type="button"
+          >
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -148,9 +157,9 @@
       <li class="card">
         <h2 class="section-heading">1 спринт: Я — чистый лист</h2>
         <div class="image-container">
-          <p class="label">страшно</p>
+          <span class="label">страшно</span>
           <img
-            class="image contrast"
+            class="image contrast kitten-in-front-of-laptop"
             src="./images/kitten-in-front-of-laptop.png"
             alt="Картинка котенка перед ноутбуком"
           >
@@ -159,12 +168,17 @@
           Один из них — страх перед чистым листом. Это, конечно же, намного сложнее, чем боязнь куска бумаги. Часто за
           этим ощущением скрываются более глубокие вопросы: с чего начать? а вдруг будет слишком сложно? что, если я не
           справлюсь?</p>
-          <p class="content-text">Вообушевление быстро испарилось, когда я открыла первую ПР. Чувствовала себя маленькой и беззащитной перед этим набором страшных символов в коде.</p>
+        <p class="content-text">Вообушевление быстро испарилось, когда я открыла первую ПР. Чувствовала себя маленькой и
+          беззащитной перед этим набором страшных символов в коде.</p>
         <div class="buttons">
-          <button class="card__icon-button is-liked">
+          <button
+            class="card__icon-button"
+            type="button"
+          >
             <svg
               class="like-icon"
               viewBox="0 0 39 36"
+              aria-hidden="true"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -192,7 +206,10 @@
               />
             </svg>
           </button>
-          <button class="card__like-button button">
+          <button
+            class="card__like-button button"
+            type="button"
+          >
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -200,21 +217,25 @@
       <li class="card">
         <h2 class="section-heading">1 спринт: А если не получится?</h2>
         <div class="image-container">
-          <p class="label">шок</p>
+          <span class="label">шок</span>
           <img
-            class="image saturate"
+            class="image saturate cat-on-laptop"
             src="./images/cat-on-laptop.png"
             alt="Картинка кота лежащего на ноутбуке"
           >
         </div>
         <p class="content-text">Первый проект — позади! Но это всё ещё самое начало пути. Радость могла быстро
           померкнуть и смениться ожиданием провала. Или вы, наоборот, могли вдохновиться успехами и поверить в себя.</p>
-          <p class="content-text">Ого, это я сама сделала?</p>
+        <p class="content-text">Ого, это я сама сделала?</p>
         <div class="buttons">
-          <button class="card__icon-button is-liked">
+          <button
+            class="card__icon-button"
+            type="button"
+          >
             <svg
               class="like-icon"
               viewBox="0 0 39 36"
+              aria-hidden="true"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -242,7 +263,10 @@
               />
             </svg>
           </button>
-          <button class="card__like-button button">
+          <button
+            class="card__like-button button"
+            type="button"
+          >
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -250,9 +274,9 @@
       <li class="card">
         <h2 class="section-heading">2 спринт: Погоня за идеалом</h2>
         <div class="image-container">
-          <p class="label">усталь</p>
+          <span class="label">усталь</span>
           <img
-            class="image hue-rotate"
+            class="image hue-rotate cat-looks-at-the-monitor"
             src="./images/cat-looks-at-the-monitor.png"
             alt="Картинка кошка смотрит в монитор с кодом"
           >
@@ -260,12 +284,16 @@
         <p class="content-text">На этом этапе вы уже достаточно разбирались в основах вёрстки, чтобы понять, как много
           ещё впереди. Вы могли попытаться погнаться за идеалом и понять, что он недостижим. А, может, вы вовсе и не
           подвержены перфекционизму и вместо того, чтобы сделать идеально, старались просто сделать.</p>
-          <p class="content-text">Кажется, я больше не хочу быть программистом.</p>
+        <p class="content-text">Кажется, я больше не хочу быть программистом.</p>
         <div class="buttons">
-          <button class="card__icon-button is-liked">
+          <button
+            class="card__icon-button"
+            type="button"
+          >
             <svg
               class="like-icon"
               viewBox="0 0 39 36"
+              aria-hidden="true"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -293,7 +321,10 @@
               />
             </svg>
           </button>
-          <button class="card__like-button button">
+          <button
+            class="card__like-button button"
+            type="button"
+          >
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -301,9 +332,9 @@
       <li class="card">
         <h2 class="section-heading">2 спринт: О тех, кто рядом</h2>
         <div class="image-container">
-          <p class="label">апатия</p>
+          <span class="label">апатия</span>
           <img
-            class="image grayscale"
+            class="image grayscale dog-with-a-bone"
             src="./images/dog-with-a-bone.png"
             alt="Картинка собаки с косточкой на носу"
           >
@@ -312,12 +343,17 @@
           целого мира). Вас окружали одногруппники, команда сопровождения и просто близкие люди, которым можно
           пожаловаться, если очередной макет просто так не поддавался. Осваивать что-то новое легче, когда рядом есть
           единомышленники, не правда ли?</p>
-          <p class="content-text">Если после окончания каждого спринта баловать себя роллами, то мотивации явно прибаляется.</p>
+        <p class="content-text">Если после окончания каждого спринта баловать себя роллами, то мотивации явно
+          прибаляется.</p>
         <div class="buttons">
-          <button class="card__icon-button is-liked">
+          <button
+            class="card__icon-button"
+            type="button"
+          >
             <svg
               class="like-icon"
               viewBox="0 0 39 36"
+              aria-hidden="true"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -345,7 +381,10 @@
               />
             </svg>
           </button>
-          <button class="card__like-button button">
+          <button
+            class="card__like-button button"
+            type="button"
+          >
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -353,21 +392,25 @@
       <li class="card">
         <h2 class="section-heading">3 спринт: Обходные стратегии</h2>
         <div class="image-container">
-          <p class="label">разочарование</p>
+          <span class="label">разочарование</span>
           <img
-            class="image blur"
+            class="image blur cat-sleeps-on-laptop"
             src="./images/cat-sleeps-on-laptop.png"
             alt="Картинка кошка, которая спит за ноутбуком"
           >
         </div>
         <p class="content-text">На этом курсе вы постоянно решали разные задачи. В какой-то момент вам могло показаться,
           что решения просто иссякли. Значит, пришло время посмотреть на задачу под другим углом.</p>
-          <p class="content-text">Все чего мне хотелось, чтобы это все поскорее закончилось. </p>
+        <p class="content-text">Все чего мне хотелось, чтобы это все поскорее закончилось. </p>
         <div class="buttons">
-          <button class="card__icon-button is-liked">
+          <button
+            class="card__icon-button"
+            type="button"
+          >
             <svg
               class="like-icon"
               viewBox="0 0 39 36"
+              aria-hidden="true"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -395,7 +438,10 @@
               />
             </svg>
           </button>
-          <button class="card__like-button button">
+          <button
+            class="card__like-button button"
+            type="button"
+          >
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -403,9 +449,9 @@
       <li class="card">
         <h2 class="section-heading">3 спринт: Когда опускаются руки</h2>
         <div class="image-container">
-          <p class="label">гнев</p>
+          <span class="label">гнев</span>
           <img
-            class="image"
+            class="image dog-eats"
             src="./images/dog-eats.png"
             alt="Картинка собака вкусно ест"
           >
@@ -413,12 +459,17 @@
         <p class="content-text">Во время учёбы часто возникает чувство, когда не знаешь, за что хвататься. Вроде и
           проектную пора сдавать, и задачи хочется порешать, и в теории получше разобраться, и жизнь не забыть пожить. В
           такие моменты очень нужна концентрация. Вспомните, откуда вы её черпали.</p>
-          <p class="content-text">Дожить до конца этого спринта мне помогли моя гиперотвественность и другие детские травмы. А так, от желания все бросить и уйти, меня останавливала только мысль о роллах в конце недели.</p>
+        <p class="content-text">Дожить до конца этого спринта мне помогли моя гиперотвественность и другие детские
+          травмы. А так, от желания все бросить и уйти, меня останавливала только мысль о роллах в конце недели.</p>
         <div class="buttons">
-          <button class="card__icon-button is-liked">
+          <button
+            class="card__icon-button"
+            type="button"
+          >
             <svg
               class="like-icon"
               viewBox="0 0 39 36"
+              aria-hidden="true"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -446,7 +497,10 @@
               />
             </svg>
           </button>
-          <button class="card__like-button button">
+          <button
+            class="card__like-button button"
+            type="button"
+          >
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -454,9 +508,9 @@
       <li class="card">
         <h2 class="section-heading">«Сейчас я здесь»</h2>
         <div class="image-container">
-          <p class="label">принятие</p>
+          <span class="label">принятие</span>
           <img
-            class="image multiple"
+            class="image multiple happy-dog"
             src="./images/happy-dog.png"
             alt="Картинка счастливого песика"
           >
@@ -465,12 +519,17 @@
           много материала про «красотищу». Во-вторых, с окончанием курса учёба не заканчивается. Вёрстка — это целый
           мир. И этот мир постоянно меняется. Познать его полностью не получится, но это тот случай, когда важен сам
           процесс познания. Ведь часто путь — и есть результат.</p>
-          <p class="content-text">Сегодня меня радует только то, что я осознала, что первая ПР была не такой уж и сложной, а значит в будущем, я смогу сказать так же и про этот спринт.</p>
+        <p class="content-text">Сегодня меня радует только то, что я осознала, что первая ПР была не такой уж и сложной,
+          а значит в будущем, я смогу сказать так же и про этот спринт.</p>
         <div class="buttons">
-          <button class="card__icon-button is-liked">
+          <button
+            class="card__icon-button"
+            type="button"
+          >
             <svg
               class="like-icon"
               viewBox="0 0 39 36"
+              aria-hidden="true"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -498,7 +557,10 @@
               />
             </svg>
           </button>
-          <button class="card__like-button button">
+          <button
+            class="card__like-button button"
+            type="button"
+          >
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -512,16 +574,15 @@
       onclick="window['dialog-id'].showModal();"
       aria-controls="dialog-id"
     >
-      <span class="button__text footer__button-text">
-        <span class="footer__icon">
-          <svg
-            class="floppy-icon"
-            viewBox="0 0 28 28"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <use href="./svg/floppy.svg#floppy"></use>
-          </svg>
-        </span>
+      <svg
+        class="floppy-icon footer__icon"
+        viewBox="0 0 28 28"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <use href="./svg/floppy.svg#floppy"></use>
+      </svg>
+      <span class="button__text">
         Сохранить на память
       </span>
     </button>
@@ -534,6 +595,7 @@
           <svg
             class="floppy-icon"
             viewBox="0 0 28 28"
+            aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
           >
             <use href="./svg/floppy.svg#floppy"></use>
@@ -543,8 +605,11 @@
           дискету, чтобы продолжить</p>
       </div>
       <form method="dialog">
-        <button class="dialog__button">
-          <span class="dialog__button-text">ок</span>
+        <button
+          class="dialog__button button"
+          type="submit"
+        >
+          <span class="button__text">ок</span>
         </button>
       </form>
     </dialog>

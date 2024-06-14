@@ -4,6 +4,22 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+.theme-light .page {
+  --main-color: #000000;
+  --main-background-color: #FFFFFF;
+  --main-background: repeating-linear-gradient(#d3d3d3 0 2px,
+      transparent 2px 4px),
+    repeating-linear-gradient(90deg,
+      #d3d3d3 0 2px,
+      transparent 2px 4px),
+    linear-gradient(#e7e7e7, #1a1a1a);
+  --heart-filling: #FF0000;
+  --body-filling: #000000;
+  --color-button: #FFFFFF;
+  --main-text-font-weight: 400;
+  --header-font-weight: 700;
+}
+
 .theme-dark .page {
   --main-color: #00CC14;
   --main-background-color: #000000;
@@ -16,6 +32,8 @@
   --heart-filling: #FF0000;
   --body-filling: #00CC14;
   --color-button: #00CC14;
+  --main-text-font-weight: 465;
+  --header-font-weight: 785;
 }
 
 @media (prefers-color-scheme: dark) {
