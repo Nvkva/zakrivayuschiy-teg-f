@@ -159,7 +159,7 @@
 
 .section-heading {
   font-family: var(--main-font);
-  font-weight: var(--header--font-weight);
+  font-variation-settings: 'wght' var(--header--font-weight), ;
   font-size: 18px;
   line-height: 21.78px;
   color: var(--main-color);
@@ -207,7 +207,7 @@
 
 .content-text {
   font-family: var(--main-font);
-  font-weight: var(--main-text-font-weight);
+  font-variation-settings: 'wght' var(--main-text-font-weight);
   font-size: 18px;
   line-height: 21px;
   padding: 25px;
@@ -363,6 +363,7 @@
 }
 
 .footer__icon {
+  display: block;
   color: var(--color-button);
   mix-blend-mode: difference;
   width: var(--footer-icon-width);
@@ -385,14 +386,8 @@ dialog[open] {
   border: solid 2px var(--main-color);
 }
 
-dialog:not([open]) {
-  pointer-events: none;
-  opacity: 0;
-}
-
 dialog::backdrop {
   background-color: rgb(0 0 0 / 0.75);
-  transition: all 0.3s;
 }
 
 .dialog__content {
