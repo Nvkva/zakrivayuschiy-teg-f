@@ -130,7 +130,7 @@
   transform: scaleX(0);
 }
 
-.theme-menu__button:is(:focus-visible)::after { 
+.theme-menu__button:is(:focus-visible)::after {
   transform: scaleX(1);
 }
 
