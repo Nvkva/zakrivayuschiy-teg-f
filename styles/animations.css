@@ -34,7 +34,6 @@
   }
 }
 
-
 .card__icon-button:active {
   .core {
     fill: var(--heart-filling);

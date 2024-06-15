@@ -42,7 +42,7 @@
   margin: 100px 0;
   width: var(--main-width);
   padding-top: var(--decor-padding-top);
-  padding-bottom: 25px;
+  padding-bottom: 27px;
 }
 
 .header__main-title {
@@ -129,15 +129,17 @@
 }
 
 .theme-menu__button:not(:focus-visible)::after {
+  position: absolute  ;
   content: "";
-  border-bottom: solid 1px var(--main-color);
+  border-bottom: solid 2px var(--main-color);
   opacity: 0.6;
   transform: scaleX(0);
 }
 
 .theme-menu__button:is(:focus-visible)::after {
+  position: absolute  ;
   content: "";
-  border-bottom: solid 1px var(--main-color);
+  border-bottom: solid 2px var(--main-color);
   opacity: 0.6;
   transform: scaleX(1);
 }
@@ -179,7 +181,7 @@
 }
 
 .image-bottom {
-  object-position: 0 30%; 
+  object-position: 0 30%;
 }
 
 .label {
@@ -241,14 +243,14 @@
 }
 
 .card__icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: none;
   height: 100%;
   padding: 0;
   border: solid 2px transparent;
   cursor: pointer;
-}
-
-.card__icon-button {
   transition: 0.3s ease;
 }
 
@@ -285,7 +287,7 @@
   appearance: none;
   cursor: pointer;
   box-shadow: none;
-  transition: 4s ease;
+  transition: 0.3s ease;
 }
 
 .button::before {
@@ -308,7 +310,7 @@
 
 .button:focus {
   box-shadow: 2px 2px var(--main-color);
- 
+
 }
 
 .button__text {
@@ -360,16 +362,16 @@
   display: grid;
   justify-content: center;
   align-items: center;
-  padding: 49px 34.5px 100px;
+  padding: 50px 34.5px 100px;
 }
 
 .save-button-section__button {
   display: grid;
-  justify-content: center;
+  justify-items: center;
   align-items: center;
-  padding: 15px 0px;
+  padding: 15px 18px;
   gap: var(--gap-save-button-section);
-  width: clamp(306px, 82vw, 335px);
+  width: clamp(306px, 82vw, 339px);
 }
 
 .floppy-icon {
