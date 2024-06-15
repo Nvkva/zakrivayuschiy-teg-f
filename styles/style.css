@@ -15,7 +15,7 @@
 */
 
 @media (width >375px) {
-  .footer__button {
+  .save-button-section__button {
     grid-auto-flow: column;
   }
 }
@@ -89,6 +89,7 @@
   appearance: none;
   cursor: pointer;
   padding: 0;
+  transition: 0.3s ease;
 }
 
 .theme-menu__button:disabled {
@@ -97,7 +98,6 @@
   opacity: 0.6;
   display: flex;
   flex-direction: row;
-  animation: 0.3s ease disabling;
 }
 
 .theme-menu__button:is(:disabled)::before {
@@ -105,7 +105,7 @@
   inset-inline-start: var(--disabled-inset-inline);
   content: '▶';
   pointer-events: none;
-  animation: 0.5s ease-in-out infinite reverse pointer-move;
+  animation: 0.5s ease-in-out infinite alternate pointer-move;
 }
 
 .theme-menu__button:hover {
@@ -113,6 +113,11 @@
 }
 
 .theme-menu__button:focus {
+  outline: none;
+  opacity: 0.6;
+}
+
+.theme-menu__button:focus-visible {
   outline: none;
   opacity: 0.6;
 }
@@ -131,6 +136,9 @@
 }
 
 .theme-menu__button:is(:focus-visible)::after {
+  content: "";
+  border-bottom: solid 1px var(--main-color);
+  opacity: 0.6;
   transform: scaleX(1);
 }
 
@@ -158,8 +166,20 @@
 .image-container {
   position: relative;
   border: solid var(--main-color) 2px;
-  width: clamp(371px, 50vw, 696px);
-  height: clamp(371px, 50vh, 696px);
+  width: 100%;
+  height: clamp(371px, 77vw, 696px);
+}
+
+.image-bottom-right {
+  object-position: 0 70%;
+}
+
+.image-center-top {
+  object-position: 50% 0;
+}
+
+.image-bottom {
+  object-position: 0 30%; 
 }
 
 .label {
@@ -189,6 +209,7 @@
 .image {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .brightness {
@@ -224,17 +245,18 @@
   height: 100%;
   padding: 0;
   border: solid 2px transparent;
+  cursor: pointer;
 }
 
-.is-liked {
+.card__icon-button {
   transition: 0.3s ease;
 }
 
-.is-liked:focus {
+.card__icon-button:focus {
   outline: none;
 }
 
-.is-liked:focus-visible {
+.card__icon-button:focus-visible {
   outline: none;
   border: solid 2px var(--main-color);
 }
@@ -262,11 +284,13 @@
   background: var(--main-background-color);
   appearance: none;
   cursor: pointer;
+  box-shadow: none;
+  transition: 4s ease;
 }
 
 .button::before {
   content: "";
-  background: none;
+  background: var(--main-color);
   transform: scaleX(0);
   transform-origin: left center;
   width: 100%;
@@ -279,13 +303,12 @@
 }
 
 .button:hover::before {
-  background: var(--main-color);
   transform: scaleX(1);
 }
 
 .button:focus {
   box-shadow: 2px 2px var(--main-color);
-  animation: 0.3s ease focusing;
+ 
 }
 
 .button__text {
@@ -308,50 +331,20 @@
   filter: contrast(110%);
 }
 
-.kitten-in-front-of-laptop {
-  object-fit: cover;
-  object-position: 30%;
-}
-
 .saturate {
   filter: saturate(40%);
-}
-
-.cat-on-laptop {
-  object-fit: cover;
-  object-position: 0 75%;
 }
 
 .hue-rotate {
   filter: hue-rotate(150deg);
 }
 
-.cat-looks-at-the-monitor {
-  object-fit: cover;
-  object-position: 50% 0;
-}
-
 .grayscale {
   filter: grayscale(1.3);
 }
 
-.dog-with-a-bone {
-  object-fit: cover;
-  object-position: 0 20%;
-}
-
 .blur {
   filter: blur(0.1rem);
-}
-
-.cat-sleeps-on-laptop {
-  object-fit: cover;
-  object-position: 0 70%;
-}
-
-.dog-eats {
-  object-fit: cover;
-  object-position: 0 30%;
 }
 
 .multiple {
@@ -363,19 +356,19 @@
   object-position: 50% 0;
 }
 
-.footer {
+.save-button-section {
   display: grid;
   justify-content: center;
   align-items: center;
   padding: 49px 34.5px 100px;
 }
 
-.footer__button {
+.save-button-section__button {
   display: grid;
   justify-content: center;
   align-items: center;
   padding: 15px 0px;
-  gap: var(--gap-footer-button);
+  gap: var(--gap-save-button-section);
   width: clamp(306px, 82vw, 335px);
 }
 
@@ -387,17 +380,17 @@
   z-index: 2;
 }
 
-.footer__icon {
+.save-button-section__icon {
   display: block;
   color: var(--color-button);
   mix-blend-mode: difference;
-  width: var(--footer-icon-width);
-  height: var(--footer-icon-height);
+  width: var(--save-button-section-icon-width);
+  height: var(--save-button-section-icon-height);
   z-index: 2;
 
   .floppy-icon {
-    width: var(--footer-icon-width);
-    height: var(--footer-icon-height);
+    width: var(--save-button-section-icon-width);
+    height: var(--save-button-section-icon-height);
   }
 }
 

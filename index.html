@@ -100,7 +100,7 @@
         <div class="image-container">
           <span class="label">воодушевление</span>
           <img
-            class="image brightness cat-with-glasses"
+            class="image brightness image-bottom"
             src="./images/cat-with-glasses.png"
             alt="Картинка кота в очках"
           >
@@ -159,7 +159,7 @@
         <div class="image-container">
           <span class="label">страшно</span>
           <img
-            class="image contrast kitten-in-front-of-laptop"
+            class="image contrast image-bottom"
             src="./images/kitten-in-front-of-laptop.png"
             alt="Картинка котенка перед ноутбуком"
           >
@@ -219,7 +219,7 @@
         <div class="image-container">
           <span class="label">шок</span>
           <img
-            class="image saturate cat-on-laptop"
+            class="image saturate image-bottom-right"
             src="./images/cat-on-laptop.png"
             alt="Картинка кота лежащего на ноутбуке"
           >
@@ -276,7 +276,7 @@
         <div class="image-container">
           <span class="label">усталь</span>
           <img
-            class="image hue-rotate cat-looks-at-the-monitor"
+            class="image hue-rotate image-center-top"
             src="./images/cat-looks-at-the-monitor.png"
             alt="Картинка кошка смотрит в монитор с кодом"
           >
@@ -334,7 +334,7 @@
         <div class="image-container">
           <span class="label">апатия</span>
           <img
-            class="image grayscale dog-with-a-bone"
+            class="image grayscale image-bottom"
             src="./images/dog-with-a-bone.png"
             alt="Картинка собаки с косточкой на носу"
           >
@@ -394,7 +394,7 @@
         <div class="image-container">
           <span class="label">разочарование</span>
           <img
-            class="image blur cat-sleeps-on-laptop"
+            class="image blur image-bottom-right"
             src="./images/cat-sleeps-on-laptop.png"
             alt="Картинка кошка, которая спит за ноутбуком"
           >
@@ -451,7 +451,7 @@
         <div class="image-container">
           <span class="label">гнев</span>
           <img
-            class="image dog-eats"
+            class="image image-bottom"
             src="./images/dog-eats.png"
             alt="Картинка собака вкусно ест"
           >
@@ -510,7 +510,7 @@
         <div class="image-container">
           <span class="label">принятие</span>
           <img
-            class="image multiple happy-dog"
+            class="image multiple image-center-top"
             src="./images/happy-dog.png"
             alt="Картинка счастливого песика"
           >
@@ -566,54 +566,55 @@
         </div>
       </li>
     </ul>
-  </main>
 
-  <footer class="footer">
-    <button
-      class="button footer__button"
-      onclick="window['dialog-id'].showModal();"
-      aria-controls="dialog-id"
-    >
-      <svg
-        class="floppy-icon footer__icon"
-        viewBox="0 0 28 28"
-        aria-hidden="true"
-        xmlns="http://www.w3.org/2000/svg"
+    <section class="save-button-section">
+      <button
+        class="button save-button-section__button"
+        onclick="window['dialog-id'].showModal();"
+        aria-controls="dialog-id"
       >
-        <use href="./svg/floppy.svg#floppy"></use>
-      </svg>
-      <span class="button__text">
-        Сохранить на память
-      </span>
-    </button>
-    <dialog
-      class="dialog"
-      id="dialog-id"
-    >
-      <div class="dialog__content">
-        <div class="dialog__icon">
-          <svg
-            class="floppy-icon"
-            viewBox="0 0 28 28"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <use href="./svg/floppy.svg#floppy"></use>
-          </svg>
-        </div>
-        <p class="dialog__title">Вставьте
-          дискету, чтобы продолжить</p>
-      </div>
-      <form method="dialog">
-        <button
-          class="dialog__button button"
-          type="submit"
+        <svg
+          class="floppy-icon save-button-section__icon"
+          viewBox="0 0 28 28"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <span class="button__text">ок</span>
-        </button>
-      </form>
-    </dialog>
-  </footer>
+          <use href="./svg/floppy.svg#floppy"></use>
+        </svg>
+        <span class="button__text">
+          Сохранить на память
+        </span>
+      </button>
+      <dialog
+        class="dialog"
+        id="dialog-id"
+      >
+        <div class="dialog__content">
+          <div class="dialog__icon">
+            <svg
+              class="floppy-icon"
+              viewBox="0 0 28 28"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <use href="./svg/floppy.svg#floppy"></use>
+            </svg>
+          </div>
+          <p class="dialog__title">Вставьте
+            дискету, чтобы продолжить</p>
+        </div>
+        <form method="dialog">
+          <button
+            class="dialog__button button"
+            type="submit"
+          >
+            <span class="button__text">ок</span>
+          </button>
+        </form>
+      </dialog>
+    </section>
+
+  </main>
 
   <script src="./scripts/like.js"></script>
 </body>
