@@ -29,6 +29,8 @@
   --save-button-section-icon-width: 28px;
   --save-button-section-icon-height: 28px;
   --decor-padding-top: 120px;
+  --label-inset-inline-end: 9px;
+  --label-inset-inline-start: 23px;
 }
 
 @media (width >375px) {
@@ -46,5 +48,7 @@
     --save-button-section-icon-width: 21px;
     --save-button-section-icon-height: 21px;
     --decor-padding-top: 144px;
+    --label-inset-inline-end: 23px;
+    --label-inset-inline-start: 25px;
   }
 }

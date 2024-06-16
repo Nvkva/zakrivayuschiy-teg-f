@@ -185,8 +185,8 @@
 .label {
   position: absolute;
   display: block;
-  inset-inline-end: 13px;
-  inset-block-start: 25px;
+  inset-inline-end: var(--label-inset-inline-end);
+  inset-block-start: var(--label-inset-inline-start);
   font-family: var(--accent-font);
   font-weight: var(--main-text-font-weight);
   font-size: 14px;
