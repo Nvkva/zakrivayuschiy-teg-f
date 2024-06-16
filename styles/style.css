@@ -42,7 +42,7 @@
   margin: 100px 0;
   width: var(--main-width);
   padding-top: var(--decor-padding-top);
-  padding-bottom: 27px;
+  padding-bottom: 25px;
 }
 
 .header__main-title {
@@ -71,7 +71,7 @@
 
 .theme-menu__list {
   display: grid;
-  gap: 13px;
+  gap: 12px;
   padding-left: var(--list-padding);
 }
 
@@ -129,7 +129,6 @@
 }
 
 .theme-menu__button:not(:focus-visible)::after {
-  position: absolute  ;
   content: "";
   border-bottom: solid 2px var(--main-color);
   opacity: 0.6;
@@ -137,7 +136,6 @@
 }
 
 .theme-menu__button:is(:focus-visible)::after {
-  position: absolute  ;
   content: "";
   border-bottom: solid 2px var(--main-color);
   opacity: 0.6;
@@ -216,11 +214,6 @@
 
 .brightness {
   filter: brightness(90%);
-}
-
-.cat-with-glasses {
-  object-fit: cover;
-  object-position: 0 20%;
 }
 
 .content-text {
@@ -351,11 +344,6 @@
 
 .multiple {
   filter: saturate(3) sepia(60%) invert(0.1);
-}
-
-.happy-dog {
-  object-fit: cover;
-  object-position: 50% 0;
 }
 
 .save-button-section {
