@@ -23,27 +23,6 @@
   }
 }
 
-.card__icon-button:hover {
-  .core {
-    fill: var(--body-filling);
-  }
-
-  .main-body {
-    fill: var(--body-filling);
-    transition-delay: 0.05s;
-  }
-}
-
-.card__icon-button:active {
-  .core {
-    fill: var(--heart-filling);
-  }
-
-  .main-body {
-    fill: var(--heart-filling);
-  }
-}
-
 .core {
   fill: transparent;
   transition: 0.3s linear;
@@ -51,9 +30,35 @@
 }
 
 .main-body {
-  transition: 0.3s linear;
-  transition-property: fill;
   fill: transparent;
+  transition: 0.3s linear;
+}
+
+.contour {
+  fill: var(--main-color);
+  transition: 0.1s linear;
+}
+
+.card__icon-button:hover .core {
+  fill: var(--body-filling);
+  transition: 0.3s linear;
+}
+
+.card__icon-button:hover .main-body {
+  fill: var(--body-filling);
+  transition: 0.3s linear;
+  transition-delay: 0.05s;
+}
+
+.card__icon-button:active .core {
+  fill: var(--heart-filling);
+  transition: 0.3s linear;
+}
+
+.card__icon-button:active .main-body {
+  fill: var(--heart-filling);
+  transition: 0.3s linear;
+  transition-delay: 0.05s;
 }
 
 .like-icon.is-liked .core {
@@ -65,11 +70,6 @@
   fill: var(--heart-filling);
   transition: 0.3s linear;
   transition-delay: 0.05s;
-}
-
-.contour {
-  fill: var(--main-color);
-  transition: 0.1s linear;
 }
 
 .like-icon.is-liked .contour {
